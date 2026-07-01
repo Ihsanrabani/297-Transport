@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Custom scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+/* Navbar active link underline */
+.nav-link-active {
+  color: #f59e0b;
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+/* Testimonial star */
+.star-filled {
+  color: #f59e0b;
+}
