@@ -6,12 +6,13 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
-import RoutesPage from './pages/RoutesPage';
+import FleetPage from './pages/FleetPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 
-// Scroll ke atas setiap pindah halaman
+const VALID_PATHS = ['/', '/tentang', '/layanan', '/armada', '/testimoni', '/kontak'];
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,8 +23,7 @@ function ScrollToTop() {
 
 function Layout() {
   const { pathname } = useLocation();
-  const is404 = pathname !== '/' &&
-    !['/tentang', '/layanan', '/rute', '/testimoni', '/kontak'].includes(pathname);
+  const is404 = !VALID_PATHS.includes(pathname);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -34,7 +34,7 @@ function Layout() {
           <Route path="/" element={<HomePage />} />
           <Route path="/tentang" element={<AboutPage />} />
           <Route path="/layanan" element={<ServicesPage />} />
-          <Route path="/rute" element={<RoutesPage />} />
+          <Route path="/armada" element={<FleetPage />} />
           <Route path="/testimoni" element={<TestimonialsPage />} />
           <Route path="/kontak" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />

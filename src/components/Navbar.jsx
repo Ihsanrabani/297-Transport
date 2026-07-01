@@ -33,8 +33,8 @@ export default function Navbar() {
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || !isHome
-                ? 'bg-white shadow-lg'
-                : 'bg-transparent'
+            ? 'bg-white shadow-lg'
+            : 'bg-transparent'
             }`}>
 
             {/* Top bar — hanya tampil di desktop saat bukan home atau saat scroll */}
@@ -175,8 +175,8 @@ export default function Navbar() {
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className={`md:hidden p-2 rounded-xl transition-colors ${scrolled || !isHome
-                                    ? 'text-gray-700 hover:bg-amber-50'
-                                    : 'text-white hover:bg-white/10'
+                                ? 'text-gray-700 hover:bg-amber-50'
+                                : 'text-white hover:bg-white/10'
                                 }`}
                             aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
                         >

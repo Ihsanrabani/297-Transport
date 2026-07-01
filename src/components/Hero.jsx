@@ -50,10 +50,10 @@ export default function Hero() {
                             Pesan Tiket Sekarang
                         </a>
                         <Link
-                            to="/rute"
+                            to="/armada"
                             className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-base px-7 py-3.5 rounded-xl border border-white/30 transition-all hover:-translate-y-0.5"
                         >
-                            Lihat Rute Tersedia
+                            Lihat Armada Kami
                             <ArrowRight size={18} />
                         </Link>
                     </div>

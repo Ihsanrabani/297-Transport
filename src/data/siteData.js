@@ -3,112 +3,111 @@
  * PUSAT DATA WEBSITE - 297 Transport Berkah Jaya Mitra Abadi
  * ============================================================
  * File ini adalah SATU-SATUNYA sumber data untuk seluruh website.
- * Untuk memperbarui konten (teks, nomor kontak, rute, dll),
- * cukup edit file ini saja. Tidak perlu menyentuh file komponen manapun.
+ * Untuk memperbarui konten cukup edit file ini saja.
  *
  * Panduan edit:
  *  - Teks biasa     : ganti nilai string langsung
  *  - Nomor WhatsApp : format tanpa tanda +, contoh: "6281234567890"
  *  - Icon           : nama icon dari lucide-react (https://lucide.dev/icons/)
- *  - Gambar         : path relatif dari folder /public, atau URL eksternal
+ *  - Gambar         : path dari /public atau URL eksternal
  * ============================================================
  */
 
 const siteData = {
   // ── INFORMASI PERUSAHAAN ────────────────────────────────────
   company: {
-    name: "297 Transport Berkah Jaya Mitra Abadi", // Nama lengkap perusahaan
-    shortName: "297 Transport", // Nama singkat (navbar/footer)
-    tagline: "Perjalanan Nyaman, Harga Terjangkau", // Tagline utama di Hero
+    name: "297 Transport Berkah Jaya Mitra Abadi",
+    shortName: "297 Transport",
+    tagline: "Liburan Seru Dimulai dari Sini",
     subTagline:
-      "Agen travel bus terpercaya untuk perjalanan antar kota, antar provinsi, dan wisata group. Armada AC modern, pengemudi berpengalaman, dan layanan 24 jam siap mengantar Anda ke tujuan.",
-    logo: "/logo.jpeg", // Path logo dari folder /public
-    yearFounded: 2014, // Tahun berdiri perusahaan
+      "Sewa Hiace dan Bus Pariwisata terpercaya untuk perjalanan wisata, gathering, ziarah, dan acara spesial Anda. Armada terawat, pengemudi berpengalaman, harga terbaik.",
+    logo: "/logo.jpeg",
+    yearFounded: 2014,
   },
 
   // ── KONTAK ──────────────────────────────────────────────────
   contact: {
     address: "Jl. Terminal Raya No. 297, Kecamatan Cakung, Jakarta Timur 13910",
-    phone: "+62 812-9700-2970", // Nomor telepon yang ditampilkan
-    whatsapp: "6281297002970", // Nomor WhatsApp (tanpa + dan spasi) untuk link wa.me
+    phone: "+62 812-9700-2970",
+    whatsapp: "6281297002970", // Tanpa + dan spasi
     email: "info@297transport.co.id",
     operationalHours: "Senin – Minggu, 06.00 – 22.00 WIB",
-    // Untuk embed Google Maps: buka maps.google.com → bagikan → Sematkan peta → salin URL src iframe
     mapEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMzEuNiJTIDEwNsKwNDknMTAuNCJF!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid",
   },
 
   // ── MEDIA SOSIAL ────────────────────────────────────────────
   socialMedia: {
-    instagram: "https://instagram.com/297transport", // Ganti dengan URL Instagram asli
-    facebook: "https://facebook.com/297transport", // Ganti dengan URL Facebook asli
-    linkedin: "#", // Ganti dengan URL LinkedIn asli (atau hapus)
-    youtube: "#", // Ganti dengan URL YouTube asli (atau hapus)
+    instagram: "https://instagram.com/297transport",
+    facebook: "https://facebook.com/297transport",
+    linkedin: "#",
+    youtube: "#",
   },
 
   // ── ANGKA STATISTIK / PENCAPAIAN ────────────────────────────
   stats: [
     { id: 1, value: "10+", label: "Tahun Pengalaman", icon: "Award" },
-    { id: 2, value: "50.000+", label: "Penumpang Terlayani", icon: "Users" },
-    { id: 3, value: "20+", label: "Armada Bus & Hiace", icon: "Bus" },
-    { id: 4, value: "30+", label: "Rute Perjalanan", icon: "MapPin" },
+    { id: 2, value: "5.000+", label: "Wisatawan Terlayani", icon: "Users" },
+    { id: 3, value: "20+", label: "Unit Armada", icon: "Bus" },
+    { id: 4, value: "100%", label: "Pelanggan Puas", icon: "ThumbsUp" },
   ],
 
   // ── TENTANG PERUSAHAAN ──────────────────────────────────────
   about: {
     title: "Tentang Kami",
-    headline: "Agen Travel Bus Pilihan Keluarga Indonesia",
+    headline: "Spesialis Sewa Kendaraan Pariwisata",
     paragraphs: [
-      "297 Transport Berkah Jaya Mitra Abadi berdiri sejak 2014 sebagai agen travel bus yang mengutamakan kenyamanan, keamanan, dan ketepatan waktu bagi setiap penumpang.",
-      "Kami melayani berbagai kebutuhan perjalanan: tiket bus reguler antar kota antar provinsi (AKAP), carter/sewa bus untuk rombongan, hingga paket wisata group ke berbagai destinasi populer di Indonesia.",
-      "Dengan armada modern ber-AC, pengemudi profesional bersertifikat, dan layanan pelanggan yang responsif 7 hari seminggu, kami berkomitmen menjadikan setiap perjalanan Anda menyenangkan.",
+      "297 Transport Berkah Jaya Mitra Abadi adalah penyedia jasa sewa kendaraan pariwisata yang berpengalaman sejak 2014. Kami fokus melayani kebutuhan transportasi wisata untuk individu, keluarga, komunitas, perusahaan, dan instansi.",
+      "Armada kami terdiri dari Hiace Pariwisata dan Bus Pariwisata dalam berbagai kapasitas — semua terawat, ber-AC, dan siap membawa Anda ke destinasi impian dengan aman dan nyaman.",
+      "Kami percaya bahwa perjalanan yang menyenangkan dimulai dari kendaraan yang tepat dan pengemudi yang berpengalaman. Itulah mengapa setiap unit armada kami dirawat secara berkala dan setiap pengemudi kami terlatih profesional.",
     ],
-    image: "https://placehold.co/600x450/1F2937/F59E0B?text=297+Travel+Bus",
+    image:
+      "https://placehold.co/600x450/1F2937/F59E0B?text=Armada+Pariwisata+297",
   },
 
   // ── KEUNGGULAN PERUSAHAAN ────────────────────────────────────
   advantages: [
     {
       id: 1,
-      title: "Armada Ber-AC & Nyaman",
+      title: "Armada Pariwisata Terawat",
       description:
-        "Seluruh bus dan hiace kami dilengkapi AC, kursi reclining, dan hiburan dalam perjalanan untuk kenyamanan maksimal.",
-      icon: "Wind",
+        "Seluruh Hiace dan Bus Pariwisata kami dirawat rutin, bersih, dan dilengkapi AC dingin, audio system, dan fasilitas nyaman.",
+      icon: "Bus",
     },
     {
       id: 2,
-      title: "Pengemudi Bersertifikat",
+      title: "Pengemudi Profesional & Ramah",
       description:
-        "Semua pengemudi kami memiliki SIM B1/B2 aktif, rekam jejak bersih, dan terlatih standar keselamatan penumpang.",
+        "Pengemudi kami berpengalaman, hafal rute wisata, memiliki SIM B1/B2 aktif, dan siap menemani perjalanan Anda dengan aman.",
       icon: "ShieldCheck",
     },
     {
       id: 3,
-      title: "Harga Transparan",
+      title: "Harga Bersaing & Transparan",
       description:
-        "Tidak ada biaya tersembunyi. Harga yang kami berikan sudah termasuk asuransi perjalanan dan fasilitas standar.",
+        "Tarif kompetitif tanpa biaya tersembunyi. Dapatkan penawaran terbaik dengan menghubungi tim kami langsung via WhatsApp.",
       icon: "BadgeDollarSign",
     },
     {
       id: 4,
-      title: "Berangkat Tepat Waktu",
+      title: "Tepat Waktu & Terpercaya",
       description:
-        "Kami menjaga jadwal keberangkatan dengan disiplin. Penumpang tidak perlu khawatir tertinggal atau terlambat sampai.",
+        "Kami menghargai waktu Anda. Kendaraan selalu tiba sesuai jadwal sehingga perjalanan wisata Anda berjalan sesuai rencana.",
       icon: "Clock",
     },
     {
       id: 5,
-      title: "Layanan 7 Hari Seminggu",
+      title: "Layanan 7 Hari Nonstop",
       description:
-        "Tim kami siap melayani pemesanan dan pertanyaan Anda setiap hari, termasuk hari libur nasional.",
+        "Kami siap melayani pemesanan dan pertanyaan setiap hari termasuk hari libur. Respon cepat via WhatsApp.",
       icon: "Headphones",
     },
     {
       id: 6,
-      title: "Pemesanan Mudah via WA",
+      title: "Berpengalaman 10+ Tahun",
       description:
-        "Pesan tiket atau carter bus cukup via WhatsApp, tanpa aplikasi tambahan. Konfirmasi cepat dan praktis.",
-      icon: "MessageCircle",
+        "Dengan lebih dari satu dekade pengalaman di industri pariwisata, kami memahami kebutuhan setiap pelanggan dengan baik.",
+      icon: "Award",
     },
   ],
 
@@ -116,172 +115,264 @@ const siteData = {
   services: [
     {
       id: 1,
-      title: "Tiket Bus Reguler AKAP",
+      title: "Sewa Hiace Pariwisata",
       description:
-        "Tersedia tiket bus antar kota antar provinsi (AKAP) dengan berbagai pilihan kelas: ekonomi, bisnis, dan eksekutif. Berangkat setiap hari.",
-      icon: "TicketCheck",
+        "Hiace premium ber-AC untuk group kecil 8–14 orang. Cocok untuk wisata keluarga, city tour, perjalanan semi-privat, dan transfer antar kota.",
+      icon: "Car",
     },
     {
       id: 2,
-      title: "Carter / Sewa Bus Rombongan",
+      title: "Sewa Bus Pariwisata",
       description:
-        "Sewa bus full-day atau point-to-point untuk perjalanan rombongan: reuni, gathering kantor, piknik sekolah, ziarah, dan acara keluarga.",
-      icon: "Users",
+        "Bus pariwisata kapasitas 27–59 kursi untuk rombongan besar. Dilengkapi AC, audio/video, dan bagasi luas. Ideal untuk gathering, piknik, dan study tour.",
+      icon: "Bus",
     },
     {
       id: 3,
-      title: "Paket Wisata Group",
+      title: "Wisata Group & Study Tour",
       description:
-        "Paket wisata all-inclusive untuk destinasi populer: Bali, Yogyakarta, Bromo, Bandung, dan banyak lagi. Termasuk transport, hotel, dan pemandu.",
+        "Paket transportasi wisata group untuk sekolah, kampus, instansi, dan komunitas ke berbagai destinasi: Bali, Yogya, Bromo, Bandung, dan banyak lagi.",
       icon: "MapPinned",
     },
     {
       id: 4,
-      title: "Antar-Jemput Bandara/Stasiun",
+      title: "Gathering & Outing Perusahaan",
       description:
-        "Layanan shuttle door-to-door dari/ke bandara dan stasiun kereta api. Cocok untuk perjalanan bisnis maupun keluarga.",
-      icon: "PlaneTakeoff",
+        "Solusi transportasi untuk gathering karyawan, team building, dan outing perusahaan. Kami siap menangani armada multipel untuk group besar sekaligus.",
+      icon: "Briefcase",
     },
     {
       id: 5,
-      title: "Sewa Hiace / Elf",
+      title: "Perjalanan Ziarah & Religi",
       description:
-        "Kendaraan minibus Hiace dan Elf tersedia untuk group kecil (7–15 orang). Ideal untuk perjalanan singkat antar kota dengan fleksibilitas tinggi.",
-      icon: "Car",
+        "Kendaraan nyaman untuk perjalanan ziarah wali, pesantren, dan destinasi religi lainnya. Pengemudi kami paham rute dan ramah untuk semua usia.",
+      icon: "Heart",
     },
     {
       id: 6,
-      title: "Perjalanan Ibadah & Ziarah",
+      title: "Antar-Jemput Bandara & Event",
       description:
-        "Paket perjalanan ibadah ke berbagai tujuan religi: Masjid-masjid bersejarah, pesantren, hingga perjalanan Umroh perdana dari Jakarta.",
-      icon: "Heart",
+        "Layanan shuttle dan antar-jemput untuk event pernikahan, bandara, stasiun, dan acara formal lainnya dengan kendaraan bersih dan tepat waktu.",
+      icon: "PlaneTakeoff",
     },
   ],
 
-  // ── RUTE POPULER (menggantikan 'Armada') ────────────────────
-  // Setiap item mewakili satu rute/trayek unggulan
-  routes: [
+  // ── ARMADA ───────────────────────────────────────────────────
+  // Fokus utama website — tampilkan detail lengkap setiap unit
+  fleet: [
     {
       id: 1,
-      from: "Jakarta",
-      to: "Yogyakarta",
-      duration: "~8 Jam",
-      departureTime: "18.00, 19.00, 20.00 WIB",
-      price: "Mulai Rp 180.000",
-      busClass: "Ekonomi AC / Bisnis / Eksekutif",
-      image:
-        "https://placehold.co/400x240/374151/F59E0B?text=Jakarta+%E2%86%92+Yogyakarta",
+      name: "Hiace Premio",
+      type: "Hiace Pariwisata",
+      capacity: "14 Kursi",
+      transmission: "Otomatis",
+      features: [
+        "Full AC",
+        "Kursi Captain",
+        "Audio System",
+        "USB Charger",
+        "Kaca Film",
+      ],
+      description:
+        "Hiace Premio generasi terbaru dengan interior premium. Kapasitas 14 penumpang dengan kursi captain yang lega dan nyaman untuk perjalanan wisata eksklusif.",
+      priceInfo: "Harga mulai dari Rp 850.000/hari",
+      badge: "Terpopuler",
+      badgeColor: "amber",
+      image: "https://placehold.co/480x300/1F2937/F59E0B?text=Hiace+Premio",
     },
     {
       id: 2,
-      from: "Jakarta",
-      to: "Surabaya",
-      duration: "~12 Jam",
-      departureTime: "17.00, 18.00, 19.00, 20.00 WIB",
-      price: "Mulai Rp 220.000",
-      busClass: "Bisnis / Eksekutif / Super Eksekutif",
-      image:
-        "https://placehold.co/400x240/374151/F59E0B?text=Jakarta+%E2%86%92+Surabaya",
+      name: "Hiace Commuter",
+      type: "Hiace Pariwisata",
+      capacity: "14 Kursi",
+      transmission: "Manual",
+      features: ["Full AC", "Kursi Tegak", "Audio System", "Bagasi Luas"],
+      description:
+        "Hiace Commuter andalan untuk perjalanan grup kecil yang ekonomis. Kabin lega, AC dingin, dan pengemudi berpengalaman siap menemani liburan Anda.",
+      priceInfo: "Harga mulai dari Rp 700.000/hari",
+      badge: "Ekonomis",
+      badgeColor: "green",
+      image: "https://placehold.co/480x300/1F2937/F59E0B?text=Hiace+Commuter",
     },
     {
       id: 3,
-      from: "Jakarta",
-      to: "Bandung",
-      duration: "~3 Jam",
-      departureTime: "07.00 – 22.00 (setiap jam)",
-      price: "Mulai Rp 75.000",
-      busClass: "Ekonomi AC / Bisnis",
-      image:
-        "https://placehold.co/400x240/374151/F59E0B?text=Jakarta+%E2%86%92+Bandung",
+      name: "Isuzu Elf Long",
+      type: "Minibus Pariwisata",
+      capacity: "16 Kursi",
+      transmission: "Manual",
+      features: ["Full AC", "Kursi Nyaman", "Audio System", "Bagasi Luas"],
+      description:
+        "Elf Long dengan kapasitas 16 penumpang, pilihan tepat untuk grup sedang yang ingin perjalanan lebih fleksibel dan terjangkau.",
+      priceInfo: "Harga mulai dari Rp 650.000/hari",
+      badge: null,
+      badgeColor: null,
+      image: "https://placehold.co/480x300/1F2937/F59E0B?text=Isuzu+Elf+Long",
     },
     {
       id: 4,
-      from: "Jakarta",
-      to: "Semarang",
-      duration: "~6 Jam",
-      departureTime: "18.00, 19.00, 21.00 WIB",
-      price: "Mulai Rp 150.000",
-      busClass: "Ekonomi AC / Eksekutif",
-      image:
-        "https://placehold.co/400x240/374151/F59E0B?text=Jakarta+%E2%86%92+Semarang",
+      name: "Bus Medium 27 Seat",
+      type: "Bus Pariwisata",
+      capacity: "27 Kursi",
+      transmission: "Manual",
+      features: [
+        "Full AC",
+        "Reclining Seat",
+        "Audio/Video",
+        "Mikrofon",
+        "Bagasi Bawah",
+      ],
+      description:
+        "Bus medium ideal untuk rombongan 20–27 orang. Dilengkapi layar hiburan, sound system, dan bagasi bawah yang lapang untuk koper dan perlengkapan wisata.",
+      priceInfo: "Harga mulai dari Rp 1.500.000/hari",
+      badge: null,
+      badgeColor: null,
+      image: "https://placehold.co/480x300/1F2937/F59E0B?text=Bus+Medium+27",
     },
     {
       id: 5,
-      from: "Jakarta",
-      to: "Malang",
-      duration: "~14 Jam",
-      departureTime: "17.00, 18.00, 19.00 WIB",
-      price: "Mulai Rp 250.000",
-      busClass: "Bisnis / Eksekutif",
-      image:
-        "https://placehold.co/400x240/374151/F59E0B?text=Jakarta+%E2%86%92+Malang",
+      name: "Bus Besar 40 Seat",
+      type: "Bus Pariwisata",
+      capacity: "40 Kursi",
+      transmission: "Otomatis",
+      features: [
+        "Full AC",
+        "Reclining Seat",
+        "Audio/Video",
+        "Mikrofon",
+        "Toilet",
+        "Bagasi Bawah",
+      ],
+      description:
+        "Bus besar 40 kursi dengan fasilitas lengkap termasuk toilet onboard. Cocok untuk gathering besar, study tour, dan perjalanan wisata jarak jauh.",
+      priceInfo: "Harga mulai dari Rp 2.200.000/hari",
+      badge: "Paling Lengkap",
+      badgeColor: "blue",
+      image: "https://placehold.co/480x300/1F2937/F59E0B?text=Bus+Besar+40",
     },
     {
       id: 6,
-      from: "Jakarta",
-      to: "Bali",
-      duration: "~24 Jam",
-      departureTime: "16.00, 17.00 WIB",
-      price: "Mulai Rp 350.000",
-      busClass: "Eksekutif / Super Eksekutif",
+      name: "Bus Besar 59 Seat",
+      type: "Bus Pariwisata",
+      capacity: "59 Kursi",
+      transmission: "Otomatis",
+      features: [
+        "Full AC",
+        "Reclining Seat",
+        "Audio/Video",
+        "Mikrofon",
+        "Toilet",
+        "Bagasi Bawah",
+        "Asuransi",
+      ],
+      description:
+        "Armada terbesar kami — bus 59 kursi super eksekutif untuk rombongan besar. Fasilitas premium, ruang kabin ekstra lega, dan pengemudi berpengalaman.",
+      priceInfo: "Harga mulai dari Rp 3.000.000/hari",
+      badge: "Super Eksekutif",
+      badgeColor: "amber",
       image:
-        "https://placehold.co/400x240/374151/F59E0B?text=Jakarta+%E2%86%92+Bali",
+        "https://placehold.co/480x300/1F2937/F59E0B?text=Bus+59+Super+Exec",
     },
   ],
 
-  // ── TESTIMONI PENUMPANG ──────────────────────────────────────
+  // ── DESTINASI WISATA POPULER ─────────────────────────────────
+  // Destinasi yang sering dilayani — untuk menginspirasi calon pelanggan
+  destinations: [
+    {
+      id: 1,
+      name: "Yogyakarta",
+      highlight: "Keraton, Borobudur, Prambanan, Malioboro",
+      duration: "2–3 Hari",
+      image: "https://placehold.co/400x260/374151/F59E0B?text=Yogyakarta",
+    },
+    {
+      id: 2,
+      name: "Bali",
+      highlight: "Tanah Lot, Ubud, Seminyak, Bedugul",
+      duration: "3–5 Hari",
+      image: "https://placehold.co/400x260/374151/F59E0B?text=Bali",
+    },
+    {
+      id: 3,
+      name: "Bromo",
+      highlight: "Sunrise Bromo, Savana, Pasir Berbisik",
+      duration: "2 Hari",
+      image: "https://placehold.co/400x260/374151/F59E0B?text=Bromo",
+    },
+    {
+      id: 4,
+      name: "Bandung",
+      highlight: "Kawah Putih, Lembang, Factory Outlet",
+      duration: "1–2 Hari",
+      image: "https://placehold.co/400x260/374151/F59E0B?text=Bandung",
+    },
+    {
+      id: 5,
+      name: "Malang & Batu",
+      highlight: "Coban Rondo, Jatim Park, Gunung Bromo",
+      duration: "2–3 Hari",
+      image: "https://placehold.co/400x260/374151/F59E0B?text=Malang+Batu",
+    },
+    {
+      id: 6,
+      name: "Lombok",
+      highlight: "Gili Trawangan, Pantai Kuta, Rinjani",
+      duration: "3–4 Hari",
+      image: "https://placehold.co/400x260/374151/F59E0B?text=Lombok",
+    },
+  ],
+
+  // ── TESTIMONI PELANGGAN ──────────────────────────────────────
   testimonials: [
     {
       id: 1,
-      name: "Dewi Rahmawati",
-      company: "Pelanggan Rute Jakarta–Yogyakarta",
-      position: "Pegawai Swasta",
+      name: "Ibu Ratna Sari",
+      company: "Wisata Keluarga ke Yogyakarta",
+      position: "Pelanggan Setia",
       message:
-        "Sudah 5 kali pakai 297 Transport untuk pulang kampung ke Jogja. Busnya bersih, AC dingin, pengemudi sopan dan hati-hati. Harganya juga bersaing dibanding agen lain. Pasti balik lagi!",
+        "Kami sewa Hiace Premio untuk liburan keluarga 12 orang ke Jogja. Mobilnya bersih banget, AC super dingin, dan Pak Sopirnya sabar dan tahu banyak spot foto bagus. Recommended banget untuk wisata keluarga!",
       rating: 5,
-      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=DR",
+      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=RS",
     },
     {
       id: 2,
-      name: "Bapak Hendra Gunawan",
-      company: "Koordinator Gathering PT Astra",
-      position: "HR Manager",
+      name: "Bapak Doni Firmansyah",
+      company: "Gathering Karyawan PT Indofood",
+      position: "Manager HR",
       message:
-        "Kami carter 3 bus untuk gathering karyawan ke Bandung. Pelayanan sangat profesional, bus datang tepat waktu, dan koordinasinya mudah banget via WhatsApp. Tim 297 sangat responsif.",
+        "Kami booking 4 unit Bus 40 Seat untuk gathering 160 karyawan ke Bandung. Semua bus datang tepat waktu, kondisi prima. Tim 297 Transport sangat koordinatif dan profesional. Pasti kami pakai lagi tahun depan!",
       rating: 5,
-      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=HG",
+      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=DF",
     },
     {
       id: 3,
-      name: "Ustaz Mujibur Rahman",
-      company: "Majelis Taklim Al-Hikmah",
-      position: "Pembimbing Ziarah",
+      name: "Ustaz Ahmad Fauzi",
+      company: "Majelis Taklim Nurul Hikmah",
+      position: "Ketua Rombongan",
       message:
-        "Kami rutin pakai 297 Transport untuk perjalanan ziarah wali. Pengemudinya sabar, tahu jalur, dan tidak pernah telat. Sangat direkomendasikan untuk rombongan ibadah.",
+        "Sudah 3 kali pakai 297 Transport untuk perjalanan ziarah wali bersama 45 jamaah. Busnya nyaman, pengemudi sopan dan tahu jalur, tidak pernah ada masalah. Insya Allah akan terus kami percayakan.",
       rating: 5,
-      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=MR",
+      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=AF",
     },
     {
       id: 4,
-      name: "Siti Nurhaliza",
-      company: "Pelanggan Rute Jakarta–Surabaya",
-      position: "Mahasiswi",
+      name: "Bu Dewi Kurniawati",
+      company: "Study Tour SMAN 5 Jakarta",
+      position: "Guru Pembimbing",
       message:
-        "Pertama kali naik bus jauh sendiri, tapi merasa aman dan nyaman dengan 297 Transport. Ada nomor darurat yang bisa dihubungi selama perjalanan. Sangat rekomendasikan untuk solo traveler!",
+        "Study tour ke Bromo dengan 3 bus untuk 120 siswa. Semua berjalan lancar, bus tepat waktu jemput di sekolah. Siswa-siswi senang sekali. Terima kasih 297 Transport atas pelayanan yang luar biasa!",
       rating: 5,
-      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=SN",
+      photo: "https://placehold.co/80x80/F59E0B/1F2937?text=DK",
     },
   ],
 
-  // ── SECTION CTA (CALL TO ACTION) ─────────────────────────────
+  // ── CTA ──────────────────────────────────────────────────────
   cta: {
-    headline: "Mau Pesan Tiket atau Carter Bus?",
+    headline: "Rencanakan Wisata Anda Sekarang",
     subheadline:
-      "Hubungi kami sekarang untuk cek ketersediaan kursi, harga terbaik, dan konfirmasi tiket instan. Gratis konsultasi, tanpa biaya tambahan.",
-    buttonText: "Pesan Tiket via WhatsApp Sekarang",
-    // Pesan default yang muncul di WhatsApp saat tombol diklik
+      "Konsultasikan kebutuhan armada wisata Anda — kami bantu pilih kendaraan yang tepat, sesuai jumlah rombongan dan budget Anda. Gratis konsultasi!",
+    buttonText: "Konsultasi Gratis via WhatsApp",
     whatsappMessage:
-      "Halo 297 Transport, saya ingin memesan tiket / carter bus. Mohon informasi ketersediaan dan harganya.",
+      "Halo 297 Transport, saya ingin konsultasi sewa kendaraan pariwisata. Mohon informasi armada dan harganya.",
   },
 
   // ── NAVIGASI ─────────────────────────────────────────────────
@@ -289,17 +380,15 @@ const siteData = {
     { label: "Beranda", href: "/", icon: "Home" },
     { label: "Tentang", href: "/tentang", icon: "Info" },
     { label: "Layanan", href: "/layanan", icon: "Briefcase" },
-    { label: "Rute", href: "/rute", icon: "MapPin" },
+    { label: "Armada", href: "/armada", icon: "Bus" },
     { label: "Testimoni", href: "/testimoni", icon: "Star" },
     { label: "Kontak", href: "/kontak", icon: "Phone" },
   ],
 
   // ── FORM KONTAK ───────────────────────────────────────────────
   contactForm: {
-    // Aksi form: "whatsapp" (redirect ke WA) atau "mailto" (buka email client)
-    action: "whatsapp",
-    // Subjek email default jika action = "mailto"
-    emailSubject: "Pertanyaan Layanan 297 Transport",
+    action: "whatsapp", // "whatsapp" atau "mailto"
+    emailSubject: "Pertanyaan Sewa Kendaraan Pariwisata 297 Transport",
   },
 };
 
